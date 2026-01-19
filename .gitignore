@@ -1,0 +1,22 @@
+# --- Environment / Secrets ---
+.env
+.venv/
+env/
+__pycache__/
+*.py[cod]
+
+# --- Data ---
+# We ignore the data folder because it's large and should be handled by DVC 
+# or downloaded fresh from the API.
+data/raw/
+data/processed/
+
+# --- IDEs & OS ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Project Specific ---
+*.log
+.pytest_cache/
+.ruff_cache/

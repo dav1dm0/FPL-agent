@@ -1,0 +1,31 @@
+[project]
+name = "fpl-agent"
+version = "0.1.0"
+description = "An XGBoost-powered Fantasy Premier League agent"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=2.2.0",
+    "numpy>=2.0.0",
+    "xgboost>=2.1.0",
+    "pulp>=2.8.0",       # The Optimization Engine
+    "requests>=2.31.0",   # API Calls
+    "scikit-learn>=1.5.0",
+    "python-dotenv>=1.0.1" # Environment variables for API keys
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.0.0",      # Testing suite
+    "ruff>=0.4.0",        # Linter and Formatter
+    "dvc>=3.50.0",        # Data Version Control
+    "jupyter>=1.0.0",
+]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "I"] # Error, Flake8, Isort
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
