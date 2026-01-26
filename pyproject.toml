@@ -8,8 +8,9 @@ dependencies = [
     "pandas~=2.3.0",
     "numpy~=2.2.0",
     "xgboost~=3.1.0",
-    "pulp~=3.3.0",       # The Optimization Engine
+    "pulp~=3.3.0",       # The Optimisation Engine
     "requests>=2.32.0",   # API Calls
+    "httpx~=0.25.0",      # Async HTTP client
     "scikit-learn~=1.7.0",
     "python-dotenv>=1.2.0" # Environment variables for API keys
 ]
@@ -17,6 +18,8 @@ dependencies = [
 [tool.uv]
 dev-dependencies = [
     "pytest~=8.4.0",      # Testing suite
+    "pytest-asyncio~=0.24.0",  # Async test support
+    "respx~=0.21.0",      # httpx mocking
     "ruff~=0.13.0",        # Linter and Formatter
     "dvc~=3.18.0",        # Data Version Control
     "jupyter~=1.1.0",
