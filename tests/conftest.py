@@ -1,4 +1,3 @@
-import pytest
 import pytest_asyncio
 from fpl_agent.ingest import FPLDataIngestor
 
