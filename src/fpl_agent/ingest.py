@@ -3,6 +3,9 @@ import logging
 import httpx
 import pandas as pd
 from typing import List, Dict, Any, Optional
+from fpl_agent.logging_config import setup_logging
+
+setup_logging()
 
 logger = logging.getLogger(__name__)
 
